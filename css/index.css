@@ -386,8 +386,12 @@ header {
 	justify-content: center;
 	padding: 10px;
 }
+footer{
+    border-top: 2px solid black;
+}
 
 @media(max-width: 800px){
+   
     nav{
         display: flex;
         flex-wrap: wrap;
@@ -401,11 +405,54 @@ header {
         flex-direction: column-reverse;
         align-items: center;
     }
-    .heading .start{
-        display: flex;
-        align-items: center
+    section .start{
+       display: flex;
+       flex-direction: column;
+       align-content: center;
+       margin-left: 200px;
+       margin-right: 200px;
+
     }
     .heading img{
         display: none;
+        border: 
     }
+
+}
+@media(max-width: 500px){
+    nav{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        height: 100%;
+        
+    }
+    nav a{
+        border-top: 2px dashed black;
+    }
+    section .start{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        margin-left: 5px;
+    }
+    body{
+        width: 100%;
+    }
+    section .top{
+        width: 500px;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+    section .top div{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .middle-img{
+        width: 100%;
+    }
+
+
 }
