@@ -203,8 +203,9 @@ nav a:hover {
 	color: orange;
 }
 
-nav img {
-	margin-left: 40px;
+.logo {
+    margin-left: 40px;
+    margin-top: 40px;
 }
 
 section {
@@ -391,9 +392,20 @@ header {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
-        border: 2px solid black;
+        justify-content: space-between;
+        width: 800px;
     }
-    nav img{
-        order: -1;
+   
+    header{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .heading .start{
+        display: flex;
+        align-items: center
+    }
+    .heading img{
+        display: none;
     }
 }
